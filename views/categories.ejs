@@ -1,0 +1,39 @@
+<%- include ('Partials/header') %>
+
+    <title>Categories</title>
+    </head>
+
+    <body>
+        <section id="firstSection">
+
+            <%- include ('Partials/nav') %>
+
+
+                <div id="catContainer">
+
+
+                    <% for(i=0; i<6; i++) { %>
+
+
+                        <a class="catBox hvr-float-shadow" href="/categories/<%= Categories[i] %> ">
+
+                            <h3>
+                                <%= Categories[i] %>
+                            </h3>
+
+
+                        </a>
+
+                        <% } %>
+                </div>
+
+        </section>
+
+
+
+
+    </body>
+
+
+
+    </html>

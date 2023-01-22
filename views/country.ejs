@@ -1,0 +1,34 @@
+<%- include ('Partials/header') %>
+
+    <title>Select your Country</title>
+    </head>
+
+    <body>
+        <%- include ('Partials/nav') %>
+
+            <div id="selectCountry">
+                <h1>Select your Country</h1>
+            </div>
+
+            <div id="countryContainer">
+                <% for (i=0; i < countries.length; i++) { %>
+                    <a class="countryBox" href="/country/<%= countries[i] %>">
+                        <h1>
+                            <%= countries[i] %>
+                                <span>
+                                    <img src="https://flagcdn.com/w40/<%= countryCode[i] %>.png" alt="countryFlag"
+                                        class="countryFlag">
+
+
+
+                                </span>
+                        </h1>
+                    </a>
+                    <% } %>
+            </div>
+            <%- include ('Partials/footer') %>
+
+
+    </body>
+
+    </html>

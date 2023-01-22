@@ -1,0 +1,19 @@
+<% for( let index=0; index < articles.length; index++ ) { %>
+
+    <div class="newsCard hidden">
+        <% if (articles[index].urlToImage) { %>
+            <img src="<%= articles[index].urlToImage %>" alt="newsImage" class="newsImage">
+            <% } %>
+                <div class="newsContent">
+                    <h3>
+                        <%= articles[index].title %>
+                    </h3>
+                    <p>
+                        <%= articles[index].description %>
+                    </p>
+                    <a href="<%= articles[index].url %>" class="hvr-sweep-to-right">Learn More</a>
+                </div>
+    </div>
+
+
+    <% } %>

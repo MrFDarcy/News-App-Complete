@@ -1,0 +1,47 @@
+<%- include ('Partials/header') %>
+
+    <title>Search results for: <%= searchText %>
+    </title>
+    </head>
+
+    <body>
+        <%- include ('Partials/nav') %>
+
+            <div id="searchTitle">
+
+                Search results for: <%= searchText %>
+
+
+
+            </div>
+
+            <section id="searchSection">
+
+
+                <% if (articles.length !==0) { %>
+
+                    <div id="newsContainerSearch">
+
+
+
+                        <%- include ('Partials/news') %>
+
+                            <% } else { %>
+
+                                <div id="noResults">
+                                    <h3>Sorry, no results found for: <%= searchText %>
+                                    </h3>
+                                </div>
+
+                                <% } %>
+
+
+
+            </section>
+            <%- include ('Partials/footer') %>
+
+    </body>
+
+    <script src="/index.js"></script>
+
+    </html>

@@ -1,0 +1,35 @@
+<%- include ('Partials/header') %>
+
+    <title>
+        <%= categoryCapitalized %> News
+    </title>
+    </head>
+
+    <body>
+        <%- include ('Partials/nav') %>
+
+            <div id="catTitle">
+
+                <%= category %>
+
+
+            </div>
+
+            <section>
+
+                <div id="newsContainer" class="newsBg">
+
+                    <%- include ('Partials/news') %>
+                </div>
+
+
+            </section>
+
+            <%- include ('Partials/footer') %>
+
+
+    </body>
+
+    <script src="/index.js"></script>
+
+    </html>
